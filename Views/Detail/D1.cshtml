@@ -1,0 +1,58 @@
+﻿
+
+@{
+    ViewBag.Title = "D1";
+  Layout = "~/Views/Shared/_LayoutSec.cshtml";
+}
+
+@model mywebproject.Models.Resume
+
+<script>
+   @* @{
+        HttpCookie cookie = Request.Cookies["login"];
+        string value = Server.HtmlEncode(cookie.Value);   
+    }*@
+    
+</script>
+    <div class="span6">
+        <div class="span4">
+                <a href="#" class="thumbnail">
+                    <img src="~/Files/@Model.file" alt="125x125" width="200" height="200">
+
+         </a>
+            </div>
+       
+      <h4>Tittle :  @Model.Resume_title</h4>
+     
+        <h4>Category :  @Model.First_name</h4>   
+
+             <h4>Req_Experience:  @Model.Last_name</h4>
+           <h4>Company :  @Model.Nic</h4>
+              <h4>Req_Education :  @Model.Email</h4>
+             <h4>Skills:  @Model.Address</h4> 
+            <h4>No_of_Vacancies :  @Model.Education</h4>
+           <h4>Shift_time:  @Model.Experience</h4>] 
+         <h4>Skills:  @Model.Skills</h4>
+           <h4>salary:  @Model.Bachulars</h4>
+            <h4>Posted_on:  @Model.Masters</h4>
+           <h4>LastDate:  @Model.Cgpa</h4> 
+            <h4>Phone:  @Model.Func_Area</h4>
+           <h4>Address:  @Model.Company</h4> 
+           
+         </table>
+@*        <input type="hidden" id="check1" value="@value" />*@
+    </div>
+    <div class="span4">
+        <table>
+        <h3>Apply for job</h3>
+      
+           @* <button class="btn  btn-info" type="submit" onclick="return check_login(this)" >Apply</button>
+        
+       *@
+                </table>
+        <div id="d1" style="color:red"></div>
+        <br><br>
+  
+        
+
+    </div>

@@ -69,7 +69,7 @@
             <!--usrname-->
              
           
-                    @using (Html.BeginForm("signupcheck", "Account", FormMethod.Post))
+                    @using (Html.BeginForm("Signup1", "EX", FormMethod.Post))
      {
     
          @Html.ValidationSummary(true);
@@ -84,13 +84,13 @@
             
 </div>
 		  <tr><td><p >@Html.LabelFor(m => m.Password)</p></td><td> @Html.TextBoxFor(m => m.Password)</td> <td> @Html.ValidationMessageFor(m=> m.Password)</td></tr>
+           <tr><td><p >@Html.LabelFor(m => m.Confirm__Password)</p> </td><td>@Html.TextBoxFor(m => m.Confirm__Password)</td> <td> @Html.ValidationMessageFor(m=> m.Confirm__Password)</td></tr>              
  		 <tr><td><p >@Html.LabelFor(m => m.City)</p> </td><td>@Html.TextBoxFor(m => m.City)</td><td> @Html.ValidationMessageFor(m=> m.City)</td></tr>
-          <tr><td><p >@Html.LabelFor(m => m.Mobile)</p> </td><td>@Html.TextBoxFor(m => m.Mobile)</td> <td> @Html.ValidationMessageFor(m=> m.Mobile)</td></tr>
-          
+         
           <tr><td><input type="submit" value="Sign Up"/></td></tr>
                       
             
-          }
+     }
             
                  
           </body>  

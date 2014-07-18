@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Viewcomments";
+}
+
+<h2>Viewcomments</h2>
+	<link href="~/Content/style.css" rel="stylesheet" />
+  @foreach(var x in ViewBag.X)
+                        {
+                  
+                       <h1>User Name: @x.User_Name</h1>
+                          
+                       <p>@x.Comment</p>
+                      }

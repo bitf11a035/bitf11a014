@@ -1,0 +1,33 @@
+﻿@model List<mywebproject.Models.Table>
+@{
+    ViewBag.Title = "comments";
+    Layout = "~/Views/Shared/_LayoutSec.cshtml";
+}
+
+<h2>comments</h2>
+		    	<link href="~/Content/style.css" rel="stylesheet" />
+			
+              <form action="~/Home/c1" method="post">
+           
+         
+               
+                 <div class="form_settings">
+               
+     
+                      <br>User Name        :<input type="text" name="uname" id="uname" />
+                     <br>Comment    :<input type="text" id="com" name="com">
+                          <input type="submit" value=" Like" id ="likes">
+                    
+                  <input type="submit" value=" Comment ">
+                  @Html.ActionLink("Viewcomments", "Viewcomments")
+
+                    @*  @foreach(var x in ViewBag.X)
+                        {
+                  
+                       <h1>User Name: @x.User_Name</h1>
+                          
+                       <h1>Comments: @x.Comment</h1>
+                      }
+                          
+                     </div>*@
+                  </form>
